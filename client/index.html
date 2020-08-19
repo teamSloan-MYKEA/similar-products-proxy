@@ -8,56 +8,89 @@
       margin: 0;
       padding: 0;
     }
+
     .header {
       max-height: 17vh;
     }
+
     .page-container {
       padding: 0 2.5rem 0 7rem;
     }
-    #main-container{
-      display: grid;
+
+    .grid-container {
+      /* display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-template-rows: auto;
+      grid-column-gap: 1.25rem;
+      margin-left: 7rem; */
+    }
+
+    #big-flex--container {
+      display: flex;
+      /* flex-direction: row;
+      flex-wrap: nowrap;
+      grid-column-start: 1;
+      grid-column-end: span 8;
+      grid-row: 1; */
+      /* display: grid;
       grid-template-columns: repeat(12,minmax(0,1fr));
       grid-template-rows: auto;
       grid-column-gap: 1.25rem;
-      margin-left: 7rem;
-    }
-    #main-title-pictures{
-      grid-column-start: 1;
-      grid-column-end: span 8;
+      margin-left: 7rem; */
     }
 
-    .more-info {
-      grid-column-start: 1;
-      grid-column-end: span 8;
+    #title {
+      /* display: block; */
+      width: 60vw;
     }
-    #addtobag{
-      grid-column-start: 9;
-      grid-column-end: span 4;
+
+    #main-title-pictures {
+      /* grid-column-start: 1;
+      grid-column-end: span 8; */
     }
+
+    #more-info {
+      /* grid-column-start: 1;
+      grid-column-end: span 8; */
+    }
+
+    #addtobag {
+      /* grid-column-start: 9;
+      grid-column-end: span 4; */
+      width: 40vw;
+    }
+
     #similar-products {
-      grid-column-start: 1;
+      /* grid-column-start: 1;
       grid-column-end: span 8;
+      grid-row: 2; */
     }
-
-
   </style>
 </head>
 
 <body>
   <!-- <div class="main-container"> -->
-    <!-- </div> -->
-    <div class="main">
-      <img class="header" src="https://ikea-ch.s3.us-east-2.amazonaws.com/Screen+Shot+2020-08-18+at+10.46.55+PM.png" alt="ikea header" />
+  <!-- </div> -->
+  <div class="main">
+    <img class="header" src="https://ikea-ch.s3.us-east-2.amazonaws.com/Screen+Shot+2020-08-18+at+10.46.55+PM.png"
+      alt="ikea header" />
     <div class="page-container">
-  <div id="main-container">
-    <div id="main-title-pictures"></div>
-    <img class="more-info" src="https://ikea-ch.s3.us-east-2.amazonaws.com/Screen+Shot+2020-08-19+at+11.47.11+AM.png" alt="more info about product" />
-    <div id="addtobag"></div>
-    <div id="reviews"></div>
-    <div id="similar-products"></div>
+      <!-- <div class="grid-container"> -->
+        <div id="big-flex-container">
+          <div id="title">
+            <div id="main-title-pictures"></div>
+            <img id="more-info"
+              src="https://ikea-ch.s3.us-east-2.amazonaws.com/Screen+Shot+2020-08-19+at+11.47.11+AM.png"
+              alt="more info about product" />
+              <div id="reviews"></div>
+          </div>
+          <div id="addtobag"></div>
+        </div>
+        <div id="similar-products"></div>
+      <!-- </div> -->
+
+    </div>
   </div>
-  </div>
-</div>
   <!--MAIN TITLE & PICTURES-->
   <script src="http://localhost:3000/public/bundle.js"></script>
   <!--SIMILAR PRODUCTS-->
@@ -65,8 +98,8 @@
   <!--REVIEWS-->
   <script src="http://localhost:3002/public/bundle.js"></script>
   <!--ADD TO BAG-->
-  <script src="http://localhost:3003/public/bundle.js"></script>
-<!-- </div> -->
+  <!-- <script src="http://localhost:3003/public/bundle.js"></script> -->
+  <!-- </div> -->
 </body>
 
 </html>
