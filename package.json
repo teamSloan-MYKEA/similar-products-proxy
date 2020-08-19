@@ -1,17 +1,30 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
+  "name": "similar-products-proxy",
+  "description": "> Project description",
   "author": "",
-  "license": "",
+  "license": "ISC",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
+    "server": "nodemon ./server/server.js --watch"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
-  }
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
+    "http-proxy-middleware": "^1.0.5"
+  },
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrr47-fec-omalley/similar-products-proxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hrr47-fec-omalley/similar-products-proxy/issues"
+  },
+  "homepage": "https://github.com/hrr47-fec-omalley/similar-products-proxy#readme"
 }
