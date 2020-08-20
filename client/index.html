@@ -4,6 +4,7 @@
   <title>PROXY SERVER</title>
   <style>
     .main {
+      min-height: 100vh;
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -17,15 +18,15 @@
       padding: 0 2.5rem 0 7rem;
     }
 
-    .grid-container {
-      /* display: grid;
+    /* .grid-container {
+      display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr));
-      grid-template-rows: auto;
+      grid-template-rows: 70vh 30vh;
       grid-column-gap: 1.25rem;
-      margin-left: 7rem; */
-    }
+      margin-left: 7rem;
+    } */
 
-    #big-flex--container {
+    #big-flex-container {
       display: flex;
       /* flex-direction: row;
       flex-wrap: nowrap;
@@ -42,11 +43,15 @@
     #title {
       /* display: block; */
       width: 60vw;
+      /* grid-column-start: 1;
+      grid-column-end: span 8;
+      grid-row: 1; */
     }
 
     #main-title-pictures {
       /* grid-column-start: 1;
       grid-column-end: span 8; */
+      /* height: 40vh; */
     }
 
     #more-info {
@@ -75,7 +80,7 @@
     <img class="header" src="https://ikea-ch.s3.us-east-2.amazonaws.com/Screen+Shot+2020-08-18+at+10.46.55+PM.png"
       alt="ikea header" />
     <div class="page-container">
-      <!-- <div class="grid-container"> -->
+      <div class="grid-container">
         <div id="big-flex-container">
           <div id="title">
             <div id="main-title-pictures"></div>
@@ -87,10 +92,14 @@
           <div id="addtobag"></div>
         </div>
         <div id="similar-products"></div>
-      <!-- </div> -->
+      </div>
 
     </div>
   </div>
+  <script crossorigin src="https://unpkg.com/react@16.13.1/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-is@16.13.1/umd/react-is.production.min.js"></script>
+  <script src="//unpkg.com/styled-components@4.0.1/dist/styled-components.min.js"></script>
   <!--MAIN TITLE & PICTURES-->
   <script src="http://localhost:3000/public/bundle.js"></script>
   <!--SIMILAR PRODUCTS-->
@@ -98,7 +107,7 @@
   <!--REVIEWS-->
   <script src="http://localhost:3002/public/bundle.js"></script>
   <!--ADD TO BAG-->
-  <!-- <script src="http://localhost:3003/public/bundle.js"></script> -->
+  <script src="http://localhost:3003/public/bundle.js"></script>
   <!-- </div> -->
 </body>
 
