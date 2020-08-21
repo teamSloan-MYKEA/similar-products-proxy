@@ -2,96 +2,108 @@
 
 <head>
   <title>PROXY SERVER</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,700&display=swap"
+    rel="stylesheet">
   <style>
     .main {
-      min-height: 100vh;
+      /* min-height: 100vh; */
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      font-family: 'Noto Sans', sans-serif;
     }
 
     .header {
-      max-height: 17vh;
+      max-width: 82vw;
+      margin-left: 2vw;
+      grid-row: 1;
+      /* z-index: 2; */
     }
 
     .page-container {
-      padding: 0 2.5rem 0 7rem;
-    }
+      margin-right: 5rem;
+      padding: 0 2.5rem 0 1.25rem;
+      /* width: 50vw; */
 
-    /* .grid-container {
-      display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-      grid-template-rows: 70vh 30vh;
-      grid-column-gap: 1.25rem;
-      margin-left: 7rem;
-    } */
+    }
 
     #big-flex-container {
-      display: flex;
-      /* flex-direction: row;
-      flex-wrap: nowrap;
-      grid-column-start: 1;
-      grid-column-end: span 8;
-      grid-row: 1; */
-      /* display: grid;
-      grid-template-columns: repeat(12,minmax(0,1fr));
+      width: 100vw;
+      display: grid;
+      grid-template-columns: repeat(13, minmax(0, 1fr));
       grid-template-rows: auto;
       grid-column-gap: 1.25rem;
-      margin-left: 7rem; */
     }
 
-    #title {
-      /* display: block; */
-      width: 60vw;
-      /* grid-column-start: 1;
+    #title-reviews-container {
+      grid-column-start: 2;
       grid-column-end: span 8;
-      grid-row: 1; */
+      grid-row: 1;
     }
 
     #main-title-pictures {
-      /* grid-column-start: 1;
-      grid-column-end: span 8; */
-      /* height: 40vh; */
+      grid-column-start: 2;
+      grid-column-end: span 8;
+      grid-row: 1;
     }
 
     #more-info {
-      /* grid-column-start: 1;
-      grid-column-end: span 8; */
+      max-height: 40vh;
+    }
+
+    .bag-container {
+      grid-column-start: 10;
+      grid-column-end: span 4;
+      /* width: 1%; */
+      margin-left: 2vw;
     }
 
     #addtobag {
-      /* grid-column-start: 9;
-      grid-column-end: span 4; */
-      width: 40vw;
+      position: sticky;
+      top: 15vh;
+      left: 73vw;
+      width: 80%;
+      height: auto;
     }
 
     #similar-products {
-      /* grid-column-start: 1;
+      grid-column-start: 2;
       grid-column-end: span 8;
-      grid-row: 2; */
+      grid-row: 2;
+      width: 58vw;
+      margin: -.5vw;
+      margin-bottom: 100px;
+      margin-top: 20px;
     }
+
+    #reviews {
+      margin-left: -1px;
+    }
+
   </style>
+
 </head>
 
 <body>
-  <!-- <div class="main-container"> -->
-  <!-- </div> -->
   <div class="main">
-    <img class="header" src="https://ikea-ch.s3.us-east-2.amazonaws.com/Screen+Shot+2020-08-18+at+10.46.55+PM.png"
-      alt="ikea header" />
     <div class="page-container">
       <div class="grid-container">
+        <img class="header" src="https://ikea-ch.s3.us-east-2.amazonaws.com/Screen+Shot+2020-08-18+at+10.46.55+PM.png"
+          alt="ikea header" />
         <div id="big-flex-container">
-          <div id="title">
+          <div id="title-reviews-container">
             <div id="main-title-pictures"></div>
             <img id="more-info"
-              src="https://ikea-ch.s3.us-east-2.amazonaws.com/Screen+Shot+2020-08-19+at+11.47.11+AM.png"
+              src="https://ikea-ch.s3.us-east-2.amazonaws.com/Screen+Shot+2020-08-20+at+7.25.22+PM.png"
               alt="more info about product" />
-              <div id="reviews"></div>
+            <div id="reviews"></div>
+            <div id="similar-products"></div>
           </div>
-          <div id="addtobag"></div>
+          <div class="bag-container">
+            <img id="addtobag" src="https://ikea-ch.s3.us-east-2.amazonaws.com/Screen+Shot+2020-08-20+at+7.24.46+PM.png" alt="add to bag component"/>
+          </div>
         </div>
-        <div id="similar-products"></div>
       </div>
 
     </div>
