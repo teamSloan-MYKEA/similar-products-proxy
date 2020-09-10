@@ -2,6 +2,7 @@ require('newrelic');
 
 const express = require('express');
 const path = require('path');
+var compression = require('compression');
 const cors = require('cors');
 
 const { createProxyMiddleware } = require('http-proxy-middleware');
@@ -11,6 +12,7 @@ const port = 2999;
 
 // const servicePort = 3001;
 
+app.use(compression());
 app.use(cors());
 // app.use(express.json());
 app.use(express.text());
