@@ -18,6 +18,7 @@ app.use(cors());
 app.use(express.text());
 app.use(express.urlencoded({ extended: false }));
 
+app.use('/', express.static(path.join(__dirname, './../client')));
 app.use(('/:id'), express.static(path.join(__dirname, '../client')));
 
 // app.use('/:id/similar/:id', createProxyMiddleware({ target: 'http://localhost:3001' }));
